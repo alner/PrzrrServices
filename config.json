@@ -1,0 +1,112 @@
+﻿{
+	"server": {
+		"url": "http://bi.prozorro.org",		
+		"port": "8081",
+		"prefix": "",
+		"requestTimeout": "20000",
+		"qps": {
+		    "url": "https://bi.prozorro.org:4243/qps/",
+			"params": {
+				"UserDirectory": "NONE",
+				"UserId": "anonymous",
+				"Attributes": []
+			}
+		},
+		"cert": {
+			"file": "../certificates/client.pfx",
+			"passphrase": "123"
+		}
+	},
+	"config_reload_token": "123456",
+	"exports_path": "../extracts/",
+	"exports": {
+		"url": "http://bi.prozorro.org/w",
+		"ntlm": {
+			"username": "rbcadmin",
+			"password": "LantLxpTpbz9",
+			"domain": "QSPROZORRO",
+			"workstation": "NE-KR"
+		},
+		"engine": "./PhantomJS/bin/PhantomJS.exe",
+		"comment": "./slimerjs/slimerjs ./PhantomJS/bin/PhantomJS.exe",
+		"engine_script": "rasterize.js"
+	},
+	"redirects": {
+		"test": {
+			"app": "fba3f2f2-cf55-40a0-a79f-b74f5ce947c2",
+			"redirect_suffix": "sheet/HbXjQep/state/analysis",			
+			"selections": [{
+				"comment": "Если задан параметр bookmark, то он используется. иначе используются поля field и values. values - это массив значений. ",				
+				"bookmark": "BxCbtK"
+			}],
+			"exports": [
+			    {
+			     "id": "TjqLdS",
+			     "size": "270px*80px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "kFAQR",
+			     "size": "300px*130px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "kFzLP",
+			     "size": "300px*130px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "DGV",
+			     "size": "300px*130px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "RqLpm",
+			     "size": "300px*130px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "GnPjvQZ",
+			     "size": "600px*50px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "ZWqbew",
+			     "size": "800px*60px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "MjCuj",
+			     "size": "1260px*120px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "gymwupE",
+			     "size": "215px*80px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "RPFnvV",
+			     "size": "215px*80px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    },
+			    {
+			     "id": "MGFdUP",
+			     "size": "215px*80px",
+			     "format": "png",
+			     "zoomFactor": "1"
+			    }			        
+			   ]			
+		}
+	}
+}

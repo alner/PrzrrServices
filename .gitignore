@@ -1,0 +1,5 @@
+Certificates/*
+Extracts/*
+node_modules/
+*.zip
+Extractor/PhantomJS/
